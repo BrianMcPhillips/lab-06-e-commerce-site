@@ -96,6 +96,13 @@ header img {
 }
 
 
+.table-header {
+    
+}
+.table-content {
+    font-family: 'sans-serif';
+
+}
 
 content {
     width: 80%;
