@@ -20,7 +20,7 @@ const audioInterface = {
 
 };
 
-const microphone = {
+const microphone1 = {
     id: 'starter-microphone',
     name: 'Neumann TLM 102',
     image: 'Neumann TLM 102.jpeg',
@@ -75,14 +75,26 @@ const channelStrip = {
 
 };
 
+const microphone2 = {
+    id: 'micro-phone2',
+    name: 'Telefunken U47',
+    image: 'U47.jpeg',
+    description: 'One of the best microphones you can buy, and for good reason. The U47 has a long history of recording Grammy winning records.',
+    category: 'microphones',
+    price: 8995.00,
+    cost: 4000.00
+
+};
+
 const equipment = [
     monitors,
     audioInterface,
-    microphone,
+    microphone1,
     headphones,
-    midiController,
     hardwareSynth,
-    channelStrip
+    midiController,
+    channelStrip,
+    microphone2
 ];
 
 export default equipment;

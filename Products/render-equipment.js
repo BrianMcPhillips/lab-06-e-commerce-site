@@ -1,7 +1,7 @@
 function renderEquipment(equipment) {
     const li = document.createElement('li');
     li.className = equipment.category;
-    li.title = equipment.description;
+    //li.title = equipment.description;
 
     const h3 = document.createElement('h3');
     h3.textContent = equipment.name;
@@ -23,7 +23,13 @@ function renderEquipment(equipment) {
     button.value = equipment.code;
     p.appendChild(button);
 
+    const descrp = document.createElement('p');
+   
+    descrp.textContent = equipment.description
+    
+    
     li.appendChild(p);
+    li.appendChild(descrp);
 
     return li;
 
