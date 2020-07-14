@@ -1,5 +1,5 @@
 import equipment from '../data/equipment.js';
-import renderEquipment from './render-equipment.js';
+import { renderEquipment } from './render-equipment.js';
 
 const list = document.getElementById('equipment');
 

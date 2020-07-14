@@ -1,4 +1,4 @@
-function renderEquipment(equipment) {
+export function renderEquipment(equipment) {
     const li = document.createElement('li');
     li.className = equipment.category;
     //li.title = equipment.description;
@@ -25,7 +25,7 @@ function renderEquipment(equipment) {
 
     const descrp = document.createElement('p');
    
-    descrp.textContent = equipment.description
+    descrp.textContent = equipment.description;
     
     
     li.appendChild(p);
@@ -35,4 +35,3 @@ function renderEquipment(equipment) {
 
 }
 
-export default renderEquipment;
