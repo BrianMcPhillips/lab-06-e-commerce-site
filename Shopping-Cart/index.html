@@ -26,37 +26,19 @@
                 
             </h2>
                 <table>
-                   <div class="table-header"> 
-                   <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </div>
-                <div class ="table-content">
-                    <tr>
-                        <td class="align-left">Genelec 8010</td>
-                        <td>2</td>
-                        <td>$350.00</td>
-                        <td class="line-item-total">$700.00</td>
-                    </tr>
-                    <tr>
-                        <td>Neumann TLM 102</td>
-                        <td>699.00</td>
-                        <td>1</td>
-                        <td>699.00</td>
-                    </tr>
-                    <tfoot>
+                    <thead class="table-header"> 
                         <tr>
-                            <td>Order total</td>
-                            <td></td>
-                            <td></td>
-                            <td>1399.00</td>
-                        </tr>
+                             <th scope='col'>Name</th>
+                             <th scope='col'>Quantity</th>
+                             <th scope='col'>Price</th>
+                             <th scope='col'>Subtotal</th>
+                         </tr>
+                    </thead>
+                        <tbody id="table-body"></tbody>
+                    <tfoot>
+                        <tr id="order-total-cell"></tr>
                     </tfoot>
-                </div>
-                </table>
+                </table> 
             <button id="place-order">Place order</button>
 
             <content>
@@ -68,7 +50,7 @@
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./Shopping-Cart.js"></script>
 </body>
 
 </html>
