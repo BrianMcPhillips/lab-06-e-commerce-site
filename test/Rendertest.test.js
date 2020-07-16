@@ -15,7 +15,7 @@ test('test to see if function renders array item', (expect) => {
     };
     //Arrange
     // Set up your arguments and expectations
-    const expected = '<li class="interfaces"><h3>Solid State Logic SSL2+</h3><img src="../data/photos/SSL SSL2+.jpeg" alt="Solid State Logic SSL2+ image"><p class="price">$ 280.00 <button value="undefined">Add to cart</button></p><p>Awesome beginner level Audio Interface from a Legendary Company</p></li>';
+    const expected = '<li class="interfaces"><h3>Solid State Logic SSL2+</h3><img src="../data/photos/SSL SSL2+.jpeg" alt="Solid State Logic SSL2+ image"><p class="price">$ 280.00 <button value="audio-interface">Add to cart</button></p><p>Awesome beginner level Audio Interface from a Legendary Company</p></li>';
     
     //Act 
     // Call the function you're testing and set the result to a const
