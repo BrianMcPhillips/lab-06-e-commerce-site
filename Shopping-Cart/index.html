@@ -16,14 +16,33 @@
     <header>
         <div class="gutter-right logo">
             <img src="assets/big-logo.png"/>
-
-        
         </div>
     </header>
     <main>
         <section class="main-section">
-            <h2>Pro Audio Webstore</h2>
-            <ul id="equipment"></ul>
+           
+            <h2>
+                Shopping Cart 
+                
+            </h2>
+                <table>
+                    <thead class="table-header"> 
+                        <tr>
+                             <th scope='col'>Name</th>
+                             <th scope='col'>Quantity</th>
+                             <th scope='col'>Price</th>
+                             <th scope='col'>Subtotal</th>
+                         </tr>
+                    </thead>
+                        <tbody id="table-body"></tbody>
+                    <tfoot>
+                        <tr id="order-total-cell"></tr>
+                    </tfoot>
+                </table> 
+            <button id="place-order">Place order</button>
+
+            <content>
+            
 
         </section>
     </main>
@@ -31,7 +50,7 @@
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="Products.js"></script>
+    <script type="module" src="./Shopping-Cart.js"></script>
 </body>
 
 </html>
