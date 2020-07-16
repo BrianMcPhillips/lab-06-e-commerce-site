@@ -21,7 +21,7 @@ export function renderEquipment(equipment) {
     p.textContent = usd;
 
     
-
+    
     const button = document.createElement('button');
     button.textContent = 'Add to cart';
     button.value = equipment.id;
