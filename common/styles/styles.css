@@ -28,31 +28,7 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
-table, tr, tfoot{
-    border: 1px solid black;
-}
-th {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10px;
-    width: 100%
-}
 
-tr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-td {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    width: 100%
-}
 
 section {
     background-color: var(--color5);
@@ -129,6 +105,32 @@ content {
 p {
     font-family: sans-serif;
     margin: var(--gutter);
+}
+
+table, tr, tfoot{
+    border: 1px solid black;
+}
+th {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+td {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%
 }
 
   
