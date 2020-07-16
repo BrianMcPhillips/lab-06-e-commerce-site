@@ -20,7 +20,7 @@ for (let i = 0; i < cart.length; i++) {
 }
 
 const orderTotal = calcOrderTotal(cart, equipment);
-orderTotalContent.textContent = toUSD(orderTotal); 
+orderTotalContent.textContent = 'Order Total ' + toUSD(orderTotal); 
 
 if (cart.length === 0) {
     placeOrderButton.disabled = true;

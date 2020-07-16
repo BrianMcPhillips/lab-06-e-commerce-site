@@ -20,6 +20,8 @@ export function renderEquipment(equipment) {
     const usd = `$ ${equipment.price.toFixed(2)} `;
     p.textContent = usd;
 
+    
+
     const button = document.createElement('button');
     button.textContent = 'Add to cart';
     button.value = equipment.id;
