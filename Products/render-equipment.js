@@ -16,9 +16,9 @@ export function renderEquipment(equipment) {
 
     const p = document.createElement('p');
     p.className = 'price';
-
+             
     const usd = `$ ${equipment.price.toFixed(2)} `;
-    p.textContent = usd;
+    p.textContent = usd; 
 
     
 
