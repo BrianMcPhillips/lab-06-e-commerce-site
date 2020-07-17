@@ -1,7 +1,13 @@
-import equipment from '../data/equipment.js';
+import starterEquipment from '../data/equipment.js';
 import { renderEquipment } from './render-equipment.js';
 
+let equipment = JSON.parse(localStorage.getItem('EQUIPMENT'));
+if (!equipment) {
+    localStorage.setItem('EQUIPMENT', JSON.stringify(starterEquipment));
 
+
+    equipment = JSON.parse(localStorage.getItem('FRUITS'));
+}
 const list = document.getElementById('equipment');
 
 
