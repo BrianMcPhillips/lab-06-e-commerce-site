@@ -1,3 +1,4 @@
+import starterEquipment from '../data/equipment.js';
 export function toUSD(number) {
     return number.toLocaleString('en-US', {
         style: 'currency',
@@ -38,4 +39,15 @@ export function calcOrderTotal(cart, equipments) {
     }
 
     return roundCurrency(orderTotal);
+}
+
+export function getEquipment() {
+    let equipment = JSON.parse(localStorage.getItem('EQUIPMENT'));
+
+    if (!equipment) {
+        localStorage.setItem('EQUIPMENT', JSON.stringify(starterEquipment));
+        equipment = JSON.parse(localStorage.getItem('EQUIPMENT'));
+    }
+
+    return equipment;
 }
